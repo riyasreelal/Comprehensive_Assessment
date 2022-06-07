@@ -24,8 +24,8 @@ CA -> target -> CA-0.0.1-SNAPSHOT.jar
 Outputs:
 
 1.There are two folders
-	a. One folder has webpage outputs
-	b. Second folder contains all programming related outputs
+a. One folder has webpage outputs
+b. Second folder contains all programming related outputs
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Angular:

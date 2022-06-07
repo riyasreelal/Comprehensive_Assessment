@@ -23,11 +23,13 @@ CA -> target -> CA-0.0.1-SNAPSHOT.jar
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Outputs:
 
-1.There are two folders
+1.There are three folders
 
 a. One folder has webpage outputs
 
 b. Second folder contains all programming related outputs
+
+c. third folder contains git hub screenshots
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Angular:

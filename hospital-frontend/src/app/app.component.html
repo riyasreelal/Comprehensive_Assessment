@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a routerLink="patients" routerLinkActive="active" class="nav-link">PATIENT LIST</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="create-patient" routerLinkActive="active" class="nav-link">ADD PATIENT</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="doctors" routerLinkActive="active" class="nav-link">DOCTORS</a>
+      </li>      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="ENTER PATIENT ID"  [(ngModel)]="id" name="id" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="patientDetails(id)">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<footer class="footer">
+  <div class="container">
+    <span>COMPREHENSIVE ASSESSMENT PROJECT BY "RIYA SREELAL -M9513502"</span>
+  </div>
+</footer>

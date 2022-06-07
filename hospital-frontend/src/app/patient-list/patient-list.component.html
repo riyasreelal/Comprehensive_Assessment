@@ -1,0 +1,21 @@
+<h1 class="text-center"> PATIENT LIST</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>PATIENT ID</th>
+      <th>PATIENT NAME</th>
+      <th>ACTIONS</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor ="let patient of patients">
+          <td>{{ patient.id }}</td>
+          <td>{{ patient.name }}</td>
+          <td>
+            <button (click) = "updatePatient(patient.id)" class = "btn btn-info">UPDATE</button>
+            <button (click) = "deletePatient(patient.id)" class = "btn btn-danger" style="margin-left: 10px">DELETE</button>
+            <button (click) = "patientDetails(patient.id)" class = "btn btn-warning" style="margin-left: 10px">VIEW</button>
+          </td>
+      </tr>
+  </tbody>
+</table>

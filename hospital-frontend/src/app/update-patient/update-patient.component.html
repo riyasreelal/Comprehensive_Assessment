@@ -1,0 +1,36 @@
+<div class="col-md-6 offset-md-3">
+    <h1 class="text-center">UPDATED PATIENT DETAILS</h1>
+    <form (ngSubmit)= "onSubmit()">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="name"
+                [(ngModel)]="patient.name" name="name" required/>
+        </div>
+
+        <div class="form-group">
+            <label>Age</label>
+            <input type="number" class="form-control" id="age"
+                [(ngModel)]="patient.age" name="age" min="1" max="110" required/>
+        </div>
+
+        <div class="form-group">
+            <label>Date Of Visit</label>
+            <input type="text" class="form-control" id="dateOfVisit"
+                [(ngModel)]="patient.dateOfVisit" name="dateOfVisit" required/>
+        </div>
+
+        <div class="form-group">
+            <label>Visited Doctor</label>
+            <input type="text" class="form-control" id="visited_doctor"
+                [(ngModel)]="patient.visited_doctor" name="visited_doctor" required/>
+        </div>
+
+        <div class="form-group">
+            <label>presc</label>
+            <input type="text" class="form-control" id="presc"
+                [(ngModel)]="patient.presc" name="presc" required/>
+        </div>
+
+        <button class="btn btn-success" type="submit">UPDATE PATIENT</button>
+    </form>
+</div>
